@@ -24,7 +24,7 @@ var routes = require('./controllers/controller.js');
 app.use('/', routes);
 
 //Database Configuration==================================
-mongoose.connect('mongodb://localhost');
+mongoose.connect('mongodb://heroku_0463pnq0:sofd0fir5fbo1b0458a1mpjj0v@ds151707.mlab.com:51707/heroku_0463pnq0');
 var db = mongoose.connection;
 
 //Log Mongoose Errors
