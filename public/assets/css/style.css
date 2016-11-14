@@ -1,2 +1,52 @@
+#introBar{
+	height: 150px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#logoBox{
+	height: 100%;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+#headingBox{
+	height: 100%;
+	width: 75%;
+	box-sizing: border-box;
+}
 
 
+#logo{
+	height: 100%;
+}
+
+.mainHeading{
+	color: #0e74bc;
+	line-height: 150px;
+	margin: 0px;
+}
+
+#joinTheList{
+	padding-top: 15px;
+	text-align: center;
+	width: 80%;
+	box-sizing: border-box;
+}
+
+#firstNameField{
+	width: 45%;
+}
+
+#lastNameField{
+	width: 45%;
+}
+
+#mailField{
+	width: 90%;
+}
+
+#submitButton{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

@@ -1,4 +1,4 @@
-<nav class="white black-text" role="navigation">
+<!-- <nav class="white black-text" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo black-text">Austin Parents for Public Education</a>
       <ul class="right hide-on-med-and-down">
@@ -10,13 +10,22 @@
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
+  </nav> -->
+
+  <div id="introBar">
+  	<div id="logoBox" class="left">
+  		<img src="assets/images/austinPPE.jpg" alt="Austin PPE Logo" id="logo">
+  	</div>
+  	<div id="headingBox" class="left">
+  		<h4 class="mainHeading center">Austin Parents for Public Education</h4>
+  	</div>
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <<!-- h1 class="header center black-text">Austin Parents Student....</h1> -->
+        <!-- h1 class="header center black-text">Austin Parents Student....</h1> -->
         <div class="row center">
           <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
         </div>
@@ -105,17 +114,20 @@
     <div class="parallax"><img src="assets/images/desk.jpeg" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer light-blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Join Our Mailing List</h5>
-          <p class="grey-text text-lighten-4">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will <strong>not</strong> clutter your inbox with tons of unsolicited e-mails and we will <strong>never</strong> give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
-          <form id="joinTheList">
+          <p class="grey-text text-lighten-4">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We <span class="red-text">will not</span> clutter your inbox with tons of unsolicited e-mails and we will <strong>never</strong> give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
+          <form id="joinTheList" class="white">
+          	<!-- <label>First Name: </label> -->
           	<input type="text" name="firtstName" id="firstNameField" placeholder="First Name" required="true">
+          	<!-- <label>Last Name: </label> -->
           	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true">
-          	<input type="e-mail" name="address" id="mailField" placeholder="E-Mail Address">
-          	<input type="submit" name="submit">
+          	<!-- <label>E-Mail: </label> -->
+          	<input type="text" name="address" id="mailField" placeholder="E-Mail">
+          	<input type="submit" name="submit" id="submitButton">
           </form>
 
 
@@ -142,7 +154,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
       </div>
     </div>
   </footer>
