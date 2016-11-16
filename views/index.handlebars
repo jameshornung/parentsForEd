@@ -17,7 +17,7 @@
   		<img src="assets/images/austinPPE.jpg" alt="Austin PPE Logo" id="logo">
   	</div>
   	<div id="headingBox" class="left">
-  		<h4 class="mainHeading center">Austin Parents for Public Education</h4>
+  		<h2 class="mainHeading">Austin Parents for Public Education</h2>
   	</div>
   </div>
 
@@ -96,6 +96,9 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Twitter Feed</h4>
           <p class="left-align light">I think this is where I will put the tweets</p>
+          <a class="twitter-timeline" href="https://twitter.com/austinparents">Tweets by @austinparents</a>
+          <div id="twitterFeed">
+          </div>
         </div>
       </div>
 
@@ -161,6 +164,22 @@
 
 
   <!--  Scripts-->
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
