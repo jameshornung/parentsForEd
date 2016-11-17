@@ -21,6 +21,14 @@
 	height: 100%;
 }
 
+#logo2{
+	width: 90%;
+}
+
+nav{
+	height: 125px;
+}
+
 .mainHeading{
 	color: #0e74bc;
 	/*line-height: 150px;*/
@@ -50,3 +58,9 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+#twitterFeed{
+	height: 400px;
+	overflow-y: scroll;
+}
+ 
