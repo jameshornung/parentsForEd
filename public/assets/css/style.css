@@ -1,38 +1,48 @@
+.row{
+	margin-bottom: 0px;
+}
+
+
+
+/*+++++++++++++++++++
+NAVIGATION
++++++++++++++++++++*/
 #introBar{
-	height: 150px;
+	height: 125px;
 	width: 100%;
 	box-sizing: border-box;
 }
 
 #logoBox{
+	padding: 0px;
 	height: 100%;
-	width: 25%;
-	box-sizing: border-box;
 }
-
-#headingBox{
-	height: 100%;
-	width: 75%;
-	box-sizing: border-box;
-}
-
 
 #logo{
 	height: 100%;
 }
 
-#logo2{
-	width: 90%;
-}
-
-nav{
-	height: 125px;
-}
-
 .mainHeading{
 	color: #0e74bc;
-	/*line-height: 150px;*/
 	margin: 0px;
+	margin-top: 15px;
+}
+
+.navLinkContainer{
+	margin-top: 79px;
+	padding: 0px;
+	
+}
+
+.links{
+	padding: 0px;
+	margin: 0px;
+}
+
+.navLink{
+	float: left;
+	padding: 12px;
+	vertical-align: bottom;
 }
 
 #joinTheList{
