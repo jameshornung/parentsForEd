@@ -25,25 +25,25 @@ NAVIGATION
 	margin-top: 15px;
 }
 
+/*+++++++++++++++++++++++++++++++++
+BENEFITS OF INVOLVEMENT
++++++++++++++++++++++++++++++++++*/
 
+.mainContent{
+	padding: 20px;
+}
+
+.bulletPoint{
+	margin-left: 5px;
+}
+
+/*+++++++++++++++++++++++++++++++++
+FOOTER
++++++++++++++++++++++++++++++++++*/
 
 #joinTheList{
-	padding-top: 15px;
+	padding: 15px;
 	text-align: center;
-	width: 80%;
-	box-sizing: border-box;
-}
-
-#firstNameField{
-	width: 45%;
-}
-
-#lastNameField{
-	width: 45%;
-}
-
-#mailField{
-	width: 90%;
 }
 
 #submitButton{
@@ -51,8 +51,17 @@ NAVIGATION
 	margin-bottom: 10px;
 }
 
+.footerLink{
+	color: white;
+}
+
+.footerLink:hover{
+	color: red;
+}
+
 #twitterFeed{
-	height: 400px;
+	height: 350px;
 	overflow-y: scroll;
+	border: 1px solid grey;
 }
  
