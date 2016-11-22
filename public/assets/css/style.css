@@ -10,16 +10,13 @@ NAVIGATION
 #introBar{
 	height: 125px;
 	width: 100%;
-	box-sizing: border-box;
-}
-
-#logoBox{
-	padding: 0px;
-	height: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #logo{
-	height: 100%;
+	max-height: 100%;
 }
 
 .mainHeading{
@@ -28,22 +25,7 @@ NAVIGATION
 	margin-top: 15px;
 }
 
-.navLinkContainer{
-	margin-top: 79px;
-	padding: 0px;
-	
-}
 
-.links{
-	padding: 0px;
-	margin: 0px;
-}
-
-.navLink{
-	float: left;
-	padding: 12px;
-	vertical-align: bottom;
-}
 
 #joinTheList{
 	padding-top: 15px;

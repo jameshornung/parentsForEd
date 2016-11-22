@@ -15,6 +15,10 @@ router.get('/', function(req, res, body){
 	res.render('index');
 })
 
+router.get('/benefits', function(req, res, body){
+  res.render('benefits');
+})
+
 router.post('/members', function(req, res, body){
 	console.log(req.body);
 	var newMember = new Member({firstname: req.body.firstName, lastname: req.body.lastName, email: req.body.address});

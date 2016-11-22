@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// Twitter
 	twttr.widgets.createTimeline(
 	  {
 	    sourceType: "profile",
@@ -6,4 +7,6 @@ $(document).ready(function(){
 	  },
 	  document.getElementById("twitterFeed")
 	);
+	// Hamburger Menu
+	$(".button-collapse").sideNav();
 });
