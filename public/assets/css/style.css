@@ -2,6 +2,10 @@
 	margin-bottom: 0px;
 }
 
+footer.page-footer{
+	margin-top: 0px;
+}
+
 
 
 /*+++++++++++++++++++
@@ -15,8 +19,9 @@ NAVIGATION
 	padding-bottom: 5px;
 }
 
-#logo{
+.logo{
 	max-height: 100%;
+	max-width: 100%;
 }
 
 .mainHeading{
@@ -63,5 +68,11 @@ FOOTER
 	height: 350px;
 	overflow-y: scroll;
 	border: 1px solid grey;
+}
+
+.tweetLogoBox{
+	padding: 20px;
+	text-align: center;
+	height: 350px;
 }
  
