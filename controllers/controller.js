@@ -19,6 +19,18 @@ router.get('/benefits', function(req, res, body){
   res.render('benefits');
 })
 
+router.get('/tech', function(req, res, body){
+  res.render('tech');
+})
+
+router.get('/involvement', function(req, res, body){
+  res.render('involvement');
+})
+
+router.get('/admin', function(req, res, body){
+  res.render('admin');
+})
+
 router.post('/members', function(req, res, body){
 	console.log(req.body);
 	var newMember = new Member({firstname: req.body.firstName, lastname: req.body.lastName, email: req.body.address});

@@ -51,6 +51,34 @@ FOOTER
 	text-align: center;
 }
 
+/*#joinTitle{
+	text-shadow: 1px 1px black;
+}*/
+
+p.label{
+	width: 20%;
+	float: left;
+	margin-bottom: 0px;
+}
+
+#firstNameField{
+	width: 70%;
+	float: left;
+	margin-bottom: 0px;
+}
+
+#lastNameField{
+	width: 70%;
+	float: left;
+	margin-bottom: 0px;
+}
+
+#eMailField{
+	width: 70%;
+	float: left;
+	margin-bottom: 0px;
+}
+
 #submitButton{
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -64,6 +92,14 @@ FOOTER
 	color: red;
 }
 
+.logo2{
+	width: 60%;
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #twitterFeed{
 	height: 350px;
 	overflow-y: scroll;
@@ -75,4 +111,10 @@ FOOTER
 	text-align: center;
 	height: 350px;
 }
- 
+
+#linkBox{
+	padding: 20px;
+	text-align: center;
+	height: 350px;
+	border: 1px solid grey;
+}

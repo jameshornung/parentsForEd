@@ -9,14 +9,16 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
         <li><a href="/benefits">Benefits</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li><a href="/tech">Tech</a></li>
+        <li><a href="/involvement">Get Involved</a></li>
+        <li><a href="/admin">Admin</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Benefits</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/benefits">Benefits</a></li>
+        <li><a href="/tech">Tech</a></li>
+        <li><a href="/involvement">Get Involved</a></li>
+        <li><a href="/admin">Admin</a></li>
       </ul>
     </div>
 </nav>
@@ -67,24 +69,30 @@
 
 
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+    <!-- <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <!-- <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5> -->
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="parallax"><img src="assets/images/swingBoy.jpeg" alt="A boy playing on a swingset"></div>
   </div>
 
   <div class="container">
     <div class="section">
-
       <div class="row">
       	<div class="col l4">
+      		<div id="linkBox">
+	      		<h4>Links</h4>
+	      		<ul id="edLinks">
+	      			<li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li>
+	      			<li><a href="http://acpta.txpta.org/" target="_blank">Austin PTA</a></li>
+	      			<!-- <li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li> -->
+	      		</ul>
+	      	</div>
       	</div>
       	<div class="col l4 tweetLogoBox valign-wrapper">
-      		<img src="assets/images/austinPPE.jpg" alt="Austin PPE Logo" class="logo valign">
+      		<img src="assets/images/austinPPE.jpg" alt="Austin PPE Logo" class="logo2 valign">
       	</div>
         <div class="col l4"> 
           <div id="twitterFeed">
@@ -114,12 +122,15 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Join Our Mailing List</h5>
-          <p class="grey-text text-lighten-4">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will not clutter your inbox with unsolicited e-mails and we will never give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
+          <h5 class="black-text" id="joinTitle">Join Our Mailing List</h5>
+          <p class="black-text text-lighten-1">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will not clutter your inbox with unsolicited e-mails and we will never give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
           <form id="joinTheList" action="/members" method="post">
-          	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true">
-          	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true">
-          	<input type="text" name="address" id="mailField" placeholder="E-Mail" required="true">
+          	<p class="label">First Name:</p>
+          	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
+          	<p class="label">Last Name:</p>
+          	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
+          	<p class="label">E-Mail:</p>
+          	<input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
           	<input type="submit" name="submit" id="submitButton">
           </form>
 
@@ -128,10 +139,10 @@
         <div class="col l6 s12">
           <!-- <h5 class="white-text">Connect</h5> -->
           <ul class="right">
-            <li><a class="footerLink" href="#!">Home</a></li>
-            <li><a class="footerLink" href="#!">Benefits</a></li>
-            <li><a class="footerLink" href="#!">Link 3</a></li>
-            <li><a class="footerLink" href="#!">Link 4</a></li>
+            <li><a class="footerLink hoverable" href="#!">Home</a></li>
+            <li><a class="footerLink hoverable" href="#!">Benefits</a></li>
+            <li><a class="footerLink hoverable" href="#!">Link 3</a></li>
+            <li><a class="footerLink hoverable" href="#!">Link 4</a></li>
           </ul>
         </div>
       </div>
