@@ -1,10 +1,9 @@
 <!-- NAVIGATION -->
 <div id="introBar">
-	<img src="assets/images/austinPPE.jpg" alt="Austin PPE Logo" class="logo">
+	<img src="assets/images/blueLogo.jpg" alt="Austin PPE Logo" class="logo">
 </div>
 <nav>
 	<div class="nav-wrapper blue darken-2">
-      <!-- <a href="#!" class="brand-logo">Logo</a> -->
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
@@ -24,8 +23,45 @@
 </nav>
 
 
-<h2>admin page</h2>
-<a href="/">Home</a>
+<h2>Page Under Construction.  Check Back Soon.</h2>
+
+<!-- FOOTER -->
+  <footer class="page-footer light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text" id="joinTitle">Join Our Mailing List</h5>
+          <p class="black-text text-lighten-1">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will not clutter your inbox with unsolicited e-mails and we will never give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
+          <form id="joinTheList" action="/members" method="post">
+          	<p class="label">First Name:</p>
+          	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
+          	<p class="label">Last Name:</p>
+          	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
+          	<p class="label">E-Mail:</p>
+          	<input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
+          	<input type="submit" name="submit" id="submitButton">
+          </form>
+
+
+        </div>
+        <div class="col l6 hide-on-small-only">
+          <!-- <h5 class="white-text right">Links</h5> -->
+          <ul class="right">
+            <li><a class="footerLink" href="/">Home</a></li>
+        <li><a class="footerLink" href="/benefits">Benefits</a></li>
+        <li><a class="footerLink" href="/tech">Tech</a></li>
+        <li><a class="footerLink" href="/involvement">Get Involved</a></li>
+        <li><a class="footerLink" href="/admin">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
+      </div>
+    </div>
+  </footer>
 
 
 

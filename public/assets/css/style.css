@@ -92,6 +92,35 @@ p.label{
 	color: red;
 }
 
+/*MEDIA QUERIES*/
+/*++++++++++++++++++++++*/
+
+/*Phone*/
+
+@media only screen and (max-width: 700px) {
+
+	#joinTheList{
+		padding: 0px;
+	}
+
+	p.label{
+		width: 100%;
+	}
+
+	#firstNameField{
+		width: 100%;
+	}
+
+	#lastNameField{
+		width: 100%;
+	}
+
+	#eMailField{
+		width: 100%;
+	}
+
+}
+
 .logo2{
 	width: 60%;
 	max-width: 100%;
@@ -103,7 +132,8 @@ p.label{
 #twitterFeed{
 	height: 350px;
 	overflow-y: scroll;
-	border: 1px solid grey;
+	/*border: 1px solid grey;*/
+	width: 100%;
 }
 
 .tweetLogoBox{
@@ -114,7 +144,8 @@ p.label{
 
 #linkBox{
 	padding: 20px;
-	text-align: center;
+	/*text-align: center;*/
 	height: 350px;
-	border: 1px solid grey;
+	/*border: 1px solid grey;*/
+	width: 100%;
 }
