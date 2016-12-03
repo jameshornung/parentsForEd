@@ -8,7 +8,7 @@
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
-        <li><a href="/benefits">Benefits</a></li>
+        <li class="active"><a href="/benefits">Benefits</a></li>
         <li><a href="/tech">Tech</a></li>
         <li><a href="/involvement">Get Involved</a></li>
         <li><a href="/admin">Admin</a></li>
@@ -22,10 +22,102 @@
       </ul>
     </div>
 </nav>
+  
+
+<!-- MAIN CONTENT -->
+
+<div class="mainContent">
+	<h4>The Benefits of Parental Ivolvement: What Research Has to Say</h4>
+
+	<p>Researchers have evidence for the positive effects of parent involvement on children, families, and school when schools and parents continuously support and encourage the children's learning and development (Eccles & Harold, 1993; Illinois State Board of Education, 1993). According to Henderson and Berla (1994 ), "the most accurate predictor of a student's achievement in school is not income or social status but the extent to which that student's family is able to:</p>
+
+	<ol>
+		<li>Create a home environment that encourages learning</li>
+		<li>Express high (but not unrealistic) expectations for their children's achievement and future careers</li>
+		<li>Become involved in their children's education at school and in the community</li>
+	</ol>
+
+	<p>Henderson and Berla (1994) reviewed and analyzed eighty-five studies that documented the comprehensive benefits of parent involvement in children's education. This and other studies show that parent involvement activities that are effectively planned and well implemented result in substantial benefits to children, parents, educators, and the school.</p>
+
+	<h5>Benefits for the Children</h5>
+
+	<ul>
+		<li class="bulletPoint">• Children tend to achieve more, regardless of ethnic or racial background, socioeconomic status, or parents' education level.</li>
+		<li class="bulletPoint">• Children generally achieve better grades, test scores, and attendance.</li>
+		<li class="bulletPoint">• Children consistently complete their homework.</li>
+		<li class="bulletPoint">• Children have better self-esteem, are more self-disciplined, and show higher aspirations and motivation toward school.</li>
+		<li class="bulletPoint">• Children's positive attitude about school often results in improved behavior in school and less suspension for disciplinary reasons.</li>
+		<li class="bulletPoint">• Fewer children are being placed in special education and remedial classes.</li>
+		<li class="bulletPoint">• Children from diverse cultural backgrounds tend to do better when parents and professionals work together to bridge the gap between the culture at home and the culture in school.</li>
+		<li class="bulletPoint">• Junior high and high school students whose parents remain involved usually make better transitions and are less likely to drop out of school.</li>
+	</ul>
+
+	<h5>Benefits for the Educators</h5>
+
+	<ul>
+		<li class="bulletPont">• When schools have a high percentage of involved parents in and out of schools, teachers and principals are more likely to experience higher morale.</li>
+		<li class="bulletPont">• Teachers and principals often earn greater respect for their profession from the parents.</li>
+		<li class="bulletPont">• Consistent parent involvement leads to improved communication and relations between parents, teachers, and administrators.</li>
+		<li class="bulletPont">• Teachers and principals acquire a better understanding of families' cultures and diversity, and they form deeper respect for parents' abilities and time.</li>
+		<li class="bulletPont">• Teachers and principals report an increase in job satisfaction.</li>
+	</ul>
+
+	<h5>Benefits for the School</h5>
+
+	<ul>
+		<li class="bulletPoint">• Schools that actively involve parents and the community tend to establish better reputations in the community.</li>
+		<li class="bulletPoint">• Schools also experience better community support.</li>
+		<li class="bulletPoint">• School programs that encourage and involve parents usually do better and have higher quality programs than programs that do not involve parents.</li>
+	</ul>
+
+	<p class="light grey-text">Excerpt from Home-School Relations: Working Successfully with Parents and Families, by G. Olsen, M.L. Fuller, 2008 edition, p. 129-130.</p>
+
+</div>
+
+<!-- FOOTER -->
+  <footer class="page-footer light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text" id="joinTitle">Join Our Mailing List</h5>
+          <p class="black-text text-lighten-1">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will not clutter your inbox with unsolicited e-mails and we will never give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
+          <form id="joinTheList" action="/members" method="post">
+            <p class="label">First Name:</p>
+            <input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
+            <p class="label">Last Name:</p>
+            <input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
+            <p class="label">E-Mail:</p>
+            <input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
+            <input type="submit" name="submit" id="submitButton">
+          </form>
 
 
+        </div>
+        <div class="col l6 hide-on-small-only">
+          <!-- <h5 class="white-text right">Links</h5> -->
+          <ul class="right">
+            <li><a class="footerLink" href="/">Home</a></li>
+        <li><a class="footerLink" href="/benefits">Benefits</a></li>
+        <li><a class="footerLink" href="/tech">Tech</a></li>
+        <li><a class="footerLink" href="/involvement">Get Involved</a></li>
+        <li><a class="footerLink" href="/admin">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
+      </div>
+    </div>
+  </footer>
 
-<!-- MAIN CONTENT (paralax) ++++++++++++++++++++++++++++++++++++++++++ -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/init.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- MAIN CONTENT (paralax) ++++++++++++++++++++++++++++++++++++++++++ -->
 
 <!-- <div class="container">
   <div class="section">
@@ -150,100 +242,3 @@
     </div>
     <div class="parallax"><img src="assets/images/graduation.jpeg" alt="Unsplashed background img 3"></div>
   </div> -->
-
-
-
-  
-
-<!-- ORIGINAL MAIN CONTENT -->
-
-<div class="mainContent">
-	<h4>The Benefits of Parental Ivolvement: What Research Has to Say</h4>
-
-	<p>Researchers have evidence for the positive effects of parent involvement on children, families, and school when schools and parents continuously support and encourage the children's learning and development (Eccles & Harold, 1993; Illinois State Board of Education, 1993). According to Henderson and Berla (1994 ), "the most accurate predictor of a student's achievement in school is not income or social status but the extent to which that student's family is able to:</p>
-
-	<ol>
-		<li>Create a home environment that encourages learning</li>
-		<li>Express high (but not unrealistic) expectations for their children's achievement and future careers</li>
-		<li>Become involved in their children's education at school and in the community</li>
-	</ol>
-
-	<p>Henderson and Berla (1994) reviewed and analyzed eighty-five studies that documented the comprehensive benefits of parent involvement in children's education. This and other studies show that parent involvement activities that are effectively planned and well implemented result in substantial benefits to children, parents, educators, and the school.</p>
-
-	<h5>Benefits for the Children</h5>
-
-	<ul>
-		<li class="bulletPoint">• Children tend to achieve more, regardless of ethnic or racial background, socioeconomic status, or parents' education level.</li>
-		<li class="bulletPoint">• Children generally achieve better grades, test scores, and attendance.</li>
-		<li class="bulletPoint">• Children consistently complete their homework.</li>
-		<li class="bulletPoint">• Children have better self-esteem, are more self-disciplined, and show higher aspirations and motivation toward school.</li>
-		<li class="bulletPoint">• Children's positive attitude about school often results in improved behavior in school and less suspension for disciplinary reasons.</li>
-		<li class="bulletPoint">• Fewer children are being placed in special education and remedial classes.</li>
-		<li class="bulletPoint">• Children from diverse cultural backgrounds tend to do better when parents and professionals work together to bridge the gap between the culture at home and the culture in school.</li>
-		<li class="bulletPoint">• Junior high and high school students whose parents remain involved usually make better transitions and are less likely to drop out of school.</li>
-	</ul>
-
-	<h5>Benefits for the Educators</h5>
-
-	<ul>
-		<li class="bulletPont">• When schools have a high percentage of involved parents in and out of schools, teachers and principals are more likely to experience higher morale.</li>
-		<li class="bulletPont">• Teachers and principals often earn greater respect for their profession from the parents.</li>
-		<li class="bulletPont">• Consistent parent involvement leads to improved communication and relations between parents, teachers, and administrators.</li>
-		<li class="bulletPont">• Teachers and principals acquire a better understanding of families' cultures and diversity, and they form deeper respect for parents' abilities and time.</li>
-		<li class="bulletPont">• Teachers and principals report an increase in job satisfaction.</li>
-	</ul>
-
-	<h5>Benefits for the School</h5>
-
-	<ul>
-		<li class="bulletPoint">• Schools that actively involve parents and the community tend to establish better reputations in the community.</li>
-		<li class="bulletPoint">• Schools also experience better community support.</li>
-		<li class="bulletPoint">• School programs that encourage and involve parents usually do better and have higher quality programs than programs that do not involve parents.</li>
-	</ul>
-
-	<p class="light grey-text">Excerpt from Home-School Relations: Working Successfully with Parents and Families, by G. Olsen, M.L. Fuller, 2008 edition, p. 129-130.</p>
-
-</div>
-
-<!-- FOOTER -->
-  <footer class="page-footer light-blue">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="black-text" id="joinTitle">Join Our Mailing List</h5>
-          <p class="black-text text-lighten-1">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will not clutter your inbox with unsolicited e-mails and we will never give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
-          <form id="joinTheList" action="/members" method="post">
-            <p class="label">First Name:</p>
-            <input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
-            <p class="label">Last Name:</p>
-            <input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
-            <p class="label">E-Mail:</p>
-            <input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
-            <input type="submit" name="submit" id="submitButton">
-          </form>
-
-
-        </div>
-        <div class="col l6 hide-on-small-only">
-          <!-- <h5 class="white-text right">Links</h5> -->
-          <ul class="right">
-            <li><a class="footerLink" href="/">Home</a></li>
-        <li><a class="footerLink" href="/benefits">Benefits</a></li>
-        <li><a class="footerLink" href="/tech">Tech</a></li>
-        <li><a class="footerLink" href="/involvement">Get Involved</a></li>
-        <li><a class="footerLink" href="/admin">Admin</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/init.js"></script>
-  <script src="assets/js/main.js"></script>
