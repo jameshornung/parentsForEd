@@ -1,4 +1,4 @@
-NAVIGATION -->
+<!-- NAVIGATION --> 
 <div id="introBar">
   <img src="assets/images/blueLogo.jpg" alt="Austin PPE Logo" class="logo">
 </div>
@@ -32,64 +32,100 @@ NAVIGATION -->
 			<p>Sign up as a member of Austin PPE, together we can engage in the education of our children and help give them the tools they need for a prosperous future.  We promise to never give, sell, or share your e-mail address with any third party without your express consent.  It is our primary goal to keep parents informed about the decisions and policies that directly affect the education of their children so that it is easier for them to remain engaged in the educational process.  Membership is free, but the dividends it can pay for your child are priceless.</p>
 		</div>
 	</div>
-</div>
 
-<div class="row">
-	<div class="col l6 m8 s12">
-		<form id="joinTheList" action="/members" method="post">
-          	<p class="label">First Name:</p>
-          	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
-          	<p class="label">Last Name:</p>
-          	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
-          	<p class="label">E-Mail:</p>
-          	<input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
-          	<input type="submit" name="submit" id="submitButton">
-          </form>
+
+	<div class="row">
+		<div class="col l6 m8 s12">
+			<form id="joinTheList" action="/members" method="post">
+	          	<p class="label">First Name:</p>
+	          	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
+	          	<p class="label">Last Name:</p>
+	          	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
+	          	<p class="label">E-Mail:</p>
+	          	<input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
+	          	<input type="submit" name="submit" id="submitButton">
+	          </form>
+		</div>
 	</div>
-</div>
 
 <!-- Twitter Text and Feed +++++++++++++++++++++++ -->
-<div class="mainContent">
-	<div class="row">
+
+	<div class="row getInvolved">
 		<div class="col s12">
 			<h4>Follow Us on Twitter</h4>
 			<p>Twitter is a great tool for dissiminating information quickly and engaging with members of our community.  Follow our twitter feed for the latest updates about education in Austin.</p>
 		</div>
 	</div>
-</div>
 
-<div class="row">
-	<div class="col l6 m8 s12">
-		<div id="twitterFeed">
-          	<a class="twitter-timeline" href="https://twitter.com/austinparents">Tweets by @austinparents</a>
-          </div>
+
+	<div class="row">
+		<div class="col l6 m8 s12">
+			<div id="twitterFeed" class="z-depth-1">
+	          	<a class="twitter-timeline" href="https://twitter.com/austinparents">Tweets by @austinparents</a>
+	          </div>
+		</div>
 	</div>
-</div>
 
 <!-- Helpful Links ++++++++++++++++++++++ -->
-<div class="mainContent">
-	<div class="row">
+
+	<div class="row getInvolved webLinks">
 		<div class="col s12">
 			<h4>Helpful Links</h4>
 			<p>There are numerous resources available on the web to help parents remain engaged in the education of their children.  Some of the most useful in our area are the websites for Austin ISD and the Austin PTA.  Unfortunately, many of these resources go unused simply because parents are not aware they exist.  Taking time to famialarize yourself these sites can be extremely beneficial in staying up to date on the decisions that directly affect your children.</p>
+			<ul id="edLinks">
+      			<li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li>
+      			<li><a href="http://acpta.txpta.org/" target="_blank">Austin PTA</a></li>
+      		</ul>
 		</div>
 	</div>
 </div>
 
-<div class="row">
-	<div class="col l6 m8 s12">
-		<div id="linkBox">
-      		<h5 class="grey-text text-darken-3 center">Helpful Links</h5>
-      		<ul id="edLinks">
-      			<li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li>
-      			<li><a href="http://acpta.txpta.org/" target="_blank">Austin PTA</a></li>
-      			<!-- <li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li> -->
-      		</ul>
-      	</div>
+<!-- UNDER CONSTRUCTION SIGN+++++++++++++++++++++++++++
+<div class="placeHolder">
+	<div class="row">
+		<div class="col s12">
+			<div class="constructionSignDiv">
+				<img class="constructionSign" src="assets/images/construction.jpg">
+			</div>
+		</div>
 	</div>
-</div>
+</div> -->
 
-<!--  Twitter Script-->
+<!-- FOOTER -->
+  <footer class="page-footer light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text" id="joinTitle">Austin Parents for Public Education is looking for advocates!</h5>
+          <p class="black-text text-lighten-1">It’s our goal to communicate with parents, so they have the greatest understanding of their school, teachers, and opportunities to reach their child’s maximum potential.</p>
+          <form id="joinTheList" action="/members" method="post">
+            <p class="label">First Name:</p>
+            <input type="text" name="firstName" id="firstNameField" required="true"><br>
+            <p class="label">Last Name:</p>
+            <input type="text" name="lastName" id="lastNameField" required="true"><br>
+            <p class="label">E-Mail:</p>
+            <input type="email" name="address" id="eMailField" required="true"><br>
+            <input type="submit" name="submit" id="submitButton">
+          </form>
+        </div>
+        <div class="col l6 hide-on-small-only">
+          <ul class="right">
+            <li><a class="footerLink" href="/">Home</a></li>
+        <li><a class="footerLink" href="/benefits">Benefits</a></li>
+        <li><a class="footerLink" href="/tech">Tech</a></li>
+        <li><a class="footerLink" href="/involvement">Get Involved</a></li>
+        <li><a class="footerLink" href="/admin">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      </div>
+    </div>
+  </footer>
+
+  <!--  Twitter Script-->
   <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
@@ -108,59 +144,4 @@ NAVIGATION -->
 }(document, "script", "twitter-wjs"));</script>
 
 
-<!-- UNDER CONSTRUCTION SIGN+++++++++++++++++++++++++++
-<div class="placeHolder">
-	<div class="row">
-		<div class="col s12">
-			<div class="constructionSignDiv">
-				<img class="constructionSign" src="assets/images/construction.jpg">
-			</div>
-		</div>
-	</div>
-</div> -->
-
-
-
-<!-- FOOTER -->
-  <footer class="page-footer light-blue">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="black-text" id="joinTitle">Join Our Mailing List</h5>
-          <p class="black-text text-lighten-1">Please join our mailing list to receive important news and updates from Austin Parents for Public Education.  We will not clutter your inbox with unsolicited e-mails and we will never give or sell your e-mail address to a third party.  We will provide critical updates on ways you can be involved in the education of your child.</p>
-          <form id="joinTheList" action="/members" method="post">
-          	<p class="label">First Name:</p>
-          	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
-          	<p class="label">Last Name:</p>
-          	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
-          	<p class="label">E-Mail:</p>
-          	<input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
-          	<input type="submit" name="submit" id="submitButton">
-          </form>
-
-
-        </div>
-        <div class="col l6 hide-on-small-only">
-          <!-- <h5 class="white-text right">Links</h5> -->
-          <ul class="right">
-            <li><a class="footerLink" href="/">Home</a></li>
-        <li><a class="footerLink" href="/benefits">Benefits</a></li>
-        <li><a class="footerLink" href="/tech">Tech</a></li>
-        <li><a class="footerLink" href="/involvement">Get Involved</a></li>
-        <li><a class="footerLink" href="/admin">Admin</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
-      </div>
-    </div>
-  </footer>
-
-
-	<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="assets/js/materialize.js"></script>
-	<script src="assets/js/init.js"></script>
-	<script src="assets/js/main.js"></script>
+	

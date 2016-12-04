@@ -32,7 +32,16 @@ NAVIGATION
 }
 
 /*+++++++++++++++++++++++++++++++++
-BENEFITS OF INVOLVEMENT
+SPLASH PAGE
++++++++++++++++++++++++++++++++++*/
+
+.missionStatement{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+/*+++++++++++++++++++++++++++++++++
+BENEFITS
 +++++++++++++++++++++++++++++++++*/
 
 .mainContent{
@@ -44,6 +53,26 @@ BENEFITS OF INVOLVEMENT
 }
 
 /*+++++++++++++++++++++++++++++++++
+GET INVOLVED
++++++++++++++++++++++++++++++++++*/
+
+.getInvolved{
+	margin-top: 50px;
+}
+
+#twitterFeed{
+	height: 300px;
+	overflow-y: scroll;
+	width: 70%;
+	max-width: 100%;
+	overflow: -moz-scrollbars-vertical;
+}
+
+.webLinks{
+	margin-bottom: 50px;
+}
+
+/*+++++++++++++++++++++++++++++++++
 FOOTER
 +++++++++++++++++++++++++++++++++*/
 
@@ -51,10 +80,6 @@ FOOTER
 	padding: 15px;
 	text-align: center;
 }
-
-/*#joinTitle{
-	text-shadow: 1px 1px black;
-}*/
 
 p.label{
 	width: 20%;
@@ -68,16 +93,31 @@ p.label{
 	margin-bottom: 0px;
 }
 
+input#firstNameField:focus{
+	border-bottom: 1px solid red;
+	box-shadow: 0 1px 0 0 red;
+}
+
 #lastNameField{
 	width: 70%;
 	float: left;
 	margin-bottom: 0px;
 }
 
+input#lastNameField:focus{
+	border-bottom: 1px solid red;
+	box-shadow: 0 1px 0 0 red;
+}
+
 #eMailField{
 	width: 70%;
 	float: left;
 	margin-bottom: 0px;
+}
+
+input#eMailField:focus{
+	border-bottom: 1px solid red;
+	box-shadow: 0 1px 0 0 red;
 }
 
 #submitButton{
@@ -130,12 +170,6 @@ p.label{
 	margin-right: auto;
 }
 
-#twitterFeed{
-	height: 350px;
-	overflow-y: scroll;
-	/*border: 1px solid grey;*/
-	width: 100%;
-}
 
 .tweetLogoBox{
 	padding: 20px;
