@@ -1,4 +1,4 @@
-<!-- NAVIGATION -->
+NAVIGATION -->
 <div id="introBar">
   <img src="assets/images/blueLogo.jpg" alt="Austin PPE Logo" class="logo">
 </div>
@@ -23,17 +23,19 @@
     </div>
 </nav>
 
+
+<!-- Membership Sign-Up Text and Form +++++++++++++++++ -->
 <div class="mainContent">
 	<div class="row">
 		<div class="col s12">
 			<h4>Membership</h4>
-			<p>Sign up as a member of Austin PPE, together we can engage in the education of our children and help give them the tools they need for a prosperous future.  We promise to never give, sell, or share your e-mail address with any third party without your express consent.  It is our primary goal to keep parents informed about the decisions and policies that directly affect the education of their children so that it is easier for them to remain engaged in the educational process.  Membership is free, but the dividends it can pay for your chld are priceless.</p>
+			<p>Sign up as a member of Austin PPE, together we can engage in the education of our children and help give them the tools they need for a prosperous future.  We promise to never give, sell, or share your e-mail address with any third party without your express consent.  It is our primary goal to keep parents informed about the decisions and policies that directly affect the education of their children so that it is easier for them to remain engaged in the educational process.  Membership is free, but the dividends it can pay for your child are priceless.</p>
 		</div>
 	</div>
 </div>
 
 <div class="row">
-	<div class="col l6 offset-l3 s12 m8 offset-m2">
+	<div class="col l6 m8 s12">
 		<form id="joinTheList" action="/members" method="post">
           	<p class="label">First Name:</p>
           	<input type="text" name="firstName" id="firstNameField" placeholder="First Name" required="true"><br>
@@ -45,6 +47,65 @@
           </form>
 	</div>
 </div>
+
+<!-- Twitter Text and Feed +++++++++++++++++++++++ -->
+<div class="mainContent">
+	<div class="row">
+		<div class="col s12">
+			<h4>Follow Us on Twitter</h4>
+			<p>Twitter is a great tool for dissiminating information quickly and engaging with members of our community.  Follow our twitter feed for the latest updates about education in Austin.</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col l6 m8 s12">
+		<div id="twitterFeed">
+          	<a class="twitter-timeline" href="https://twitter.com/austinparents">Tweets by @austinparents</a>
+          </div>
+	</div>
+</div>
+
+<!-- Helpful Links ++++++++++++++++++++++ -->
+<div class="mainContent">
+	<div class="row">
+		<div class="col s12">
+			<h4>Helpful Links</h4>
+			<p>There are numerous resources available on the web to help parents remain engaged in the education of their children.  Some of the most useful in our area are the websites for Austin ISD and the Austin PTA.  Unfortunately, many of these resources go unused simply because parents are not aware they exist.  Taking time to famialarize yourself these sites can be extremely beneficial in staying up to date on the decisions that directly affect your children.</p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col l6 m8 s12">
+		<div id="linkBox">
+      		<h5 class="grey-text text-darken-3 center">Helpful Links</h5>
+      		<ul id="edLinks">
+      			<li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li>
+      			<li><a href="http://acpta.txpta.org/" target="_blank">Austin PTA</a></li>
+      			<!-- <li><a href="https://www.austinisd.org/" target="_blank">Austin ISD</a></li> -->
+      		</ul>
+      	</div>
+	</div>
+</div>
+
+<!--  Twitter Script-->
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 
 <!-- UNDER CONSTRUCTION SIGN+++++++++++++++++++++++++++
@@ -102,4 +163,4 @@
 	<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="assets/js/materialize.js"></script>
 	<script src="assets/js/init.js"></script>
-	<script src="assets/js/main.js"></script> -->
+	<script src="assets/js/main.js"></script>
