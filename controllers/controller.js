@@ -30,11 +30,8 @@ router.get('/involvement', function(req, res, body){
 })
 
 router.get('/admin', function(req, res, body){
-  res.render('admin');
-})
-
-router.get('/unauthorized', function(req, res, body){
-  res.render('/unauthorized');
+  var user = req.user;
+  res.render('admin', { user });
 })
 
 router.post('/members', function(req, res, body){
@@ -50,9 +47,28 @@ router.post('/members', function(req, res, body){
   });
 });
 
+router.post('/register', function(req, res){
+  var path = req.body.pathName;
+  var newUser = new User({ username: req.body.username, password: req.body.password });
+  console.log('New User', newUser);
+  newUser.save(function(err, doc) {
+    if(err) {
+      console.log('save error', err);
+    } else {
+      console.log('saved', doc)
+      req.login(newUser, function(err) {
+        if (err) {
+          console.log('login error', err);
+        }
+        return res.redirect('/admin');
+      });
+    }
+  });
+})
+
 //PASSPORT LOG IN / LOG OUT
 router.post('/login', 
-  passport.authenticate('local', { failureRedirect: '/unauthorized' }),
+  passport.authenticate('local', { failureRedirect: '/admin' }),
   function(req, res) {
     // var path = req.body.pathName;
     res.redirect('/admin');

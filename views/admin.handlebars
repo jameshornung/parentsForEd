@@ -35,7 +35,19 @@
 
 <div>
   {{#if user}}
-      <p class="loginText">Howdy, {{user.username}}<a href="/logout" class="grey-text"> logout</a></p>
+    <h1>SUCCESS!!</h1>
+    <p class="loginText">Howdy, {{user.username}}<a href="/logout" class="grey-text"> logout</a></p>
+     <div class="col l6 s12 registrationForm">
+        <p>Add Administrator</p>
+        <form action="/register" method="post">
+            <label class="">Username:</label>
+            <input type="text" name="username" required="true"/><br/>
+            <label>Password:</label>
+            <input type="password" name="password" required="true"/>
+            <input type="hidden" value="/" name="pathName">
+            <input type="submit" value="Submit"/>
+        </form>
+      </div> 
   {{^}}
     <div id="formHolder">
      <form id="adminLoginForm" action="/login" method="post">
@@ -46,8 +58,9 @@
           <input type="hidden" value="/" name="pathName">
           <input type="submit" value="Submit"/>
       </form>
-    </div>
-  {{/if}}
+     
+    </div> 
+  {{/if}} 
 </div>
 
 <!-- FOOTER -->
