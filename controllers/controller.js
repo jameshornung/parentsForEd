@@ -5,7 +5,9 @@ var request = require('request');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
+var passport = require('passport');
 
+var User = require('./../models/User.js');
 var Member = require('./../models/Member.js');
 
 
@@ -31,6 +33,10 @@ router.get('/admin', function(req, res, body){
   res.render('admin');
 })
 
+router.get('/unauthorized', function(req, res, body){
+  res.render('/unauthorized');
+})
+
 router.post('/members', function(req, res, body){
 	console.log(req.body);
 	var newMember = new Member({firstname: req.body.firstName, lastname: req.body.lastName, email: req.body.address});
@@ -43,6 +49,20 @@ router.post('/members', function(req, res, body){
       };
   });
 });
+
+//PASSPORT LOG IN / LOG OUT
+router.post('/login', 
+  passport.authenticate('local', { failureRedirect: '/unauthorized' }),
+  function(req, res) {
+    // var path = req.body.pathName;
+    res.redirect('/admin');
+})
+
+router.get('/logout',
+  function(req, res){
+    req.logout();
+    res.redirect('/');
+  });
 
 
 module.exports = router;

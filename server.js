@@ -37,6 +37,32 @@ db.once('open', function(){
 	console.log('Mongoose Connection Successful!');
 });
 
+var User = require('./models/User.js')
+console.log("user model: ", User)
+
+// Passport Configuration====================================
+passport.use(new Strategy(
+  function(username, password, cb) {
+    User.findOne({username: username}, function(err, user) {
+      if (err) { return cb(err); }
+      if (!user) { return cb(null, false); }
+      if (user.password != password) { return cb(null, false); }
+      return cb(null, user);
+    });
+  }));
+
+passport.serializeUser(function(user, cb) {
+  cb(null, user.id);
+});
+
+passport.deserializeUser(function(id, cb) {
+  // console.log(db)
+  User.findById(id, function (err, user) {
+    if (err) { return cb(err); }
+    cb(null, user);
+  });
+});
+
 //MAKE THE CONNECTION=================================================
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
