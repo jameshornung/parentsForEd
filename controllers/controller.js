@@ -31,7 +31,11 @@ router.get('/involvement', function(req, res, body){
 
 router.get('/admin', function(req, res, body){
   var user = req.user;
-  res.render('admin', { user });
+
+   Member.find().then(function(data){
+    var memberList = data;
+    res.render('admin', { user, memberList });
+  })
 })
 
 router.post('/members', function(req, res, body){
