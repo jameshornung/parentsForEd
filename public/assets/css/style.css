@@ -89,6 +89,16 @@ ADMIN
 	text-align: center;
 }
 
+.memberList{
+	border: 2px solid black;
+	max-height: 700px;
+	overflow-y: scroll;
+}
+
+.addAdmin{
+
+}
+
 
 
 

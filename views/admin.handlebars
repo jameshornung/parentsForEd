@@ -23,31 +23,29 @@
     </div>
 </nav>
 
-<!-- <div class="placeHolder">
-	<div class="row">
-		<div class="col s12">
-			<div class="constructionSignDiv">
-				<img class="constructionSign" src="assets/images/construction.jpg">
-			</div>
-		</div>
-	</div>
-</div> -->
-
 <div>
   {{#if user}}
-    <h1>SUCCESS!!</h1>
-    <p class="loginText">Howdy, {{user.username}}<a href="/logout" class="grey-text"> logout</a></p>
     <div class="row">
-      <div class="col s12" id="memberList">
+      <div class="col s12 black white-text">
+        <p class="loginText">Hi, {{user.username}} <a href="/logout"> logout</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8">
+        <h4 class="center">Member List</h4>
+        <table class="striped memberList">
+          <th>Name</th>
+          <th>E-Mail</th>
       {{#each memberList }}
-        <div id="messageBoardPost" class="card-panel blue">
-          <p class="light-green-text text-accent-3">{{ this.firstname }} {{ this.lastname }}</p>
-          <p class="light-green-text text-accent-3"> {{ this.email }}</p>
-        </div>
+        <tr>
+          <td>{{ this.firstname }} {{ this.lastname }}</td>
+          <td>{{ this.email }}</td>
+        </tr>
       {{/each}}
+      </table>
     </div>
   </div>
-     <div class="col l6 s12 registrationForm">
+     <div class="col s12 m4 addAdmin">
         <p>Add Administrator</p>
         <form action="/register" method="post">
             <label class="">Username:</label>
