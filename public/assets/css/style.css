@@ -76,9 +76,34 @@ GET INVOLVED
 ADMIN
 +++++++++++++++++++++++++++++++++*/
 
+.adminFunctions{
+	margin-top: 20px;
+}
+
 #formHolder{
 	height: 600px;
 }
+
+#adminForm{
+	text-align: center;
+    width: 70%;
+    /*background-color: gray;*/
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+input#adminName:focus{
+	border-bottom: 1px solid red;
+	box-shadow: 0 1px 0 0 red;
+}
+
+input#adminPassword:focus{
+	border-bottom: 1px solid red;
+	box-shadow: 0 1px 0 0 red;
+}
+
 
 #adminLoginForm{
 	margin-top: 100px;
@@ -89,10 +114,14 @@ ADMIN
 	text-align: center;
 }
 
+.memberDiv{
+	max-height: 500px;
+	overflow-y: scroll;
+	margin-bottom: 100px;
+}
+
 .memberList{
 	border: 2px solid black;
-	max-height: 700px;
-	overflow-y: scroll;
 }
 
 .addAdmin{

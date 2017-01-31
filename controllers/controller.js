@@ -39,7 +39,7 @@ router.get('/admin', function(req, res, body){
 })
 
 router.post('/members', function(req, res, body){
-	console.log(req.body);
+	// console.log(req.body);
 	var newMember = new Member({firstname: req.body.firstName, lastname: req.body.lastName, email: req.body.address});
 	newMember.save(function(err, doc) {
     if(err) {
