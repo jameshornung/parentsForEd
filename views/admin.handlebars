@@ -39,13 +39,13 @@
       </div>
     </div>
     <div class="row adminFunctions">
-      <div class="col s12 m4 addAdmin">
+      <div class="col s12 m4 addAdmin hide-on-med-and-down">
         <form action="/register" method="post" id="adminForm">
             <label class="">Username:</label>
             <input type="text" name="username" id="adminName" required="true"/><br/>
             <label>Password:</label>
             <input type="password" name="password" id="adminPassword" required="true"/>
-            <input type="hidden" value="/" name="pathName">
+            <!-- <input type="hidden" value="/" name="pathName"> -->
             <input type="submit" value="Submit"/>
         </form>
       </div> 
@@ -94,6 +94,7 @@
           	<input type="text" name="lastName" id="lastNameField" placeholder="Last Name" required="true"><br>
           	<p class="label">E-Mail:</p>
           	<input type="email" name="address" id="eMailField" placeholder="E-Mail" required="true"><br>
+            <input type="hidden" value="/admin" name="pathName">
           	<input type="submit" name="submit" id="submitButton">
           </form>
 
@@ -103,23 +104,16 @@
           <!-- <h5 class="white-text right">Links</h5> -->
           <ul class="right">
             <li><a class="footerLink" href="/">Home</a></li>
-        <li><a class="footerLink" href="/benefits">Benefits</a></li>
-        <li><a class="footerLink" href="/tech">Tech</a></li>
-        <li><a class="footerLink" href="/involvement">Get Involved</a></li>
-        <li><a class="footerLink" href="/admin">Admin</a></li>
+            <li><a class="footerLink" href="/benefits">Benefits</a></li>
+            <li><a class="footerLink" href="/tech">Tech</a></li>
+            <li><a class="footerLink" href="/involvement">Get Involved</a></li>
+            <li><a class="footerLink" href="/admin">Admin</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
       </div>
     </div>
   </footer>
-
-
-	<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="assets/js/materialize.js"></script>
-	<script src="assets/js/init.js"></script>
-	<script src="assets/js/main.js"></script>

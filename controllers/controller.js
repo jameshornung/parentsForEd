@@ -39,20 +39,21 @@ router.get('/admin', function(req, res, body){
 })
 
 router.post('/members', function(req, res, body){
-	// console.log(req.body);
+	// console.log(req.body.pathName);
+  var path = req.body.pathName;
 	var newMember = new Member({firstname: req.body.firstName, lastname: req.body.lastName, email: req.body.address});
 	newMember.save(function(err, doc) {
     if(err) {
       console.log('save error', err);
     } else {
       console.log('saved', doc)
-      return res.redirect('/');
+      return res.redirect(path);
       };
   });
 });
 
 router.post('/register', function(req, res){
-  var path = req.body.pathName;
+  // var path = req.body.pathName;
   var newUser = new User({ username: req.body.username, password: req.body.password });
   console.log('New User', newUser);
   newUser.save(function(err, doc) {
